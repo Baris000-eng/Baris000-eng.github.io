@@ -1,308 +1,54 @@
+<!DOCTYPE html>
 <html>
+ 
 <head>
+    <title>
+        Making a div horizontally
+        scrollable using CSS
+    </title>
     <style>
-       .pers {
-           margin-top: 30px;
-           margin-bottom: 5px;
-           text-align: center;
-        }
-       .logos {
-           margin: 20px 10px;
-        }
-       .animate-charcter{
-            text-transform: uppercase;
-            background-image: linear-gradient(
-            -225deg,
-            #231557 0%,
-            #44107a 32%,
-            #ff1361 70%,
-            #fff800 100%
-            );
-             background-size: auto auto;
-             background-clip: border-box;
-             background-size: 200% auto;
-             color: #fff;
-             background-clip: text;
-             text-fill-color: transparent;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: textclip 2s linear infinite;
-            display: inline-block;
-            font-size: 190px;
-      }
-
-        @keyframes textclip {
-            to {
-                 background-position: 200% center;
-           }
-       }
-         .copyright {
-                position: fixed;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                color: orange;
-                opacity: 0.7;
-                text-align: center;
-                background-color: green;
-
-        }       
-         body {
-            justify-content: center;
-            align-items: center;
-            display: block;
-            text-align: center;
-            line-height: 195%;
-            font-size: 1.00em;
-            background-color: #DBF9FC;
-            font-weight: normal;
-        }
-        .flowingText {
-            margin-top: 45px;
-        }
-        label {
-            cursor: pointer;
-            color: darkgreen;
-            display: block;
-            margin: 0;
-        }
-
-        a {
-            color: hotpink;
-            font-weight: bold;
-             margin: 0;
-        }
-
-        h1 {
-            justify-content: center;
-            align-items: center;
-            margin-left: 40px;
-            font-size: 40px;
-            font-weight: bold;
-        } 
-        
-        title {
-            color: darkgreen;
-            text-shadow: darkblue;
-        }
-        details {
-            color: darkblue;
-            font-size: medium;
-            font-weight: bold;
-            margin: 0;
-        }
-        p {
-            font-size: medium;
-            font-weight: bold;
-            margin: 1;
-        }
-        progress {
-            color: darkgreen;
-            margin: 0;
-        }
-        summary {
-            color: darkorage;
-            font-size: medium;
-            font-weight: bold;
-            margin: 0;
-        }
-            
-  </style>
+    h1 {
+        color: Green;
+    }
+     
+    div.scroll {
+        margin: 4px, 4px;
+        padding: 4px;
+        background-color: #08c708;
+        width: 300px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    </style>
 </head>
+ 
 <body>
-<h1 class = "pers">My Personal Website</h1>
-<div class = "flowingText">
-<marquee bgcolor="green" direction="right"
-         loop="">Welcome Dear Guest!</marquee>
-    </div><br>
-    <div class="animate-charcter">
-        <br>
-  <p>Barış Kaplan</p>
-  <p>Software Developer</p>
-    </div>
-    <br>
-         <a href="https://github.com/Baris000-eng" class = "logos"> 
-            <img width='30' height='30' src="github.jpeg"> 
-        </a>
-       <a href="https://www.linkedin.com/in/barış-k-896652175/" class = "logos"> 
-           <img width='30' height='30' src="linkedin.png"> 
-       </a> 
-      <a href="https://www.hackerrank.com/bkaplan18" class = "logos">
-        <img width='30' height='30' src="hackerrank.png"> 
-    </a>
-      <a href="https://medium.com/@bkaplan18" class = "logos">
-        <img width='30' height='30' src="medium.png"> 
-      </a> 
-        <a href="https://leetcode.com/Baris000-eng/" class = "logos">
-            <img width='30' height='30' src="leetcode.png"> 
-        </a>
-    <br>
-    <div class="text-center m-top-50">
-            <a href= "mailto:bkaplan18@ku.edu.tr">Email Me</a>
-            <a class="btn line-btn-dark btn-icon btn-radius" href="Barış Kaplan, Latest CV.pdf" title=""<i class="fa fa-download" download></i>Download CV</a>
-            <a class="btn line-btn-dark btn-icon btn-radius" href="Cover Letter.pdf" title=""<i class="fa fa-download" download></i>Download Cover Letter</a>
-    </div>
-<details>
-  <summary>My Experiences</summary> 
-    
-<details>
-<summary>Finance Intern (At Zencan Construction & Investment Company) </summary>
-<p>
-    Şirketin finans ve bina satın alma&kiralama ile alakalı word&excel&powerpoint belgelerinin hazırlanması,
-    düzenlenmesi, dil bilgisi hatalarının giderilmesi gibi konularla ilgilendim. Eski ve değerlenebilecek binaların
-    yenilenmesi, kiralanması &satılması & satın alınması için uygun olabilecek okul, aşevi, kreş vb yerlerle konuştum.
-    Ayrıca Ingilizce belgelerin türkçeye, ve türkçe belgelerin ingilizceye çevirilmesi ile ilgilendim. Eski ve
-    değerlenebilecek bir binanın yurda dönüştürülmesi ve kiralanması projesinde görev aldım. Bu projeyi özet olarak
-    anlatan bir powerpoint belgesinin hazırlanmasına katkı sağladım. Bu belgenin dil bilgisini, bu belgede bulunan
-    noktalama işaretlerini, bu belgenin ingilizce versiyonunu ve türkçe versiyonunu düzenledim.
-</p>
-</details>
-
-    
-<details>
-    <summary>Zarta Potensas Intern (Content Editing and Digital Marketing Intern) <img width='15' height='15' src="potensas.jpeg"> </summary>
-<p>İçerik editörlüğü, marketing, oyun üretimi alanında gelişmek için staj programına başvurdum.
-    </p>
-</details>
-    
-<details>
-    <summary>Software Engineering Intern (at Aktek Bilişim) <a href="https://www.aktekbilisim.com"> <img width='15' height='15' src="aktek.png"></a> </summary>
-    <p>
-    I have worked on the Java technologies which are project object models, Apache maven, Java Spring boot, 
-    and XML. I have worked on a NLP-based project called "Chatbot". I have joined to the educations about 
-    Amazon Web Services, Object Oriented Programming, and XML. I have examined the source code of the open 
-    source Turkish NLP library called “Zemberek”, done research about the NLP processes implemented in Zemberek 
-    library.  Source code of the Zemberek NLP library (for Turkish language):
-    <a href="https://github.com/ahmetaa/zemberek-nlp">Zemberek NLP Library</a> 
-    </p>
-    </details>
-    
-    
-<details>
-    <summary>Strategic Planning and Business Development Intern (at Aktek Bilişim) <a href="https://www.aktekbilisim.com"> <img width='15' height='15' src="aktek.png"> </a> </summary> 
-    <p>I have researched the it purchases in global and in Turkey, the sectors of the companies purchased, the dates
-    of the it purchases, the dollar value of the it purchases in global and in Turkey, and the current
-    employee numbers of the companies purchased by another companies. I have dealed with opponent company analysis,
-    swot analysis, and pest/pestel analysis. I have researched the oracle consultant numbers, current employee
-    numbers, market sizes, foundation dates, and Bilişim500 rankings of the Aktek Bilişim's opponent companies.</p>
-</details>
-    
-<details>
-    <summary>Software Marketing Intern</summary>
-    <p>
-    I have learned how to reach the target customer volume via LinkedIn,
-    Email , and WhatsApp. I have researched the road sign production & road sign management
-    & road asset management opportunities across Portugal and Spain. I have sent messages via
-    LinkedIn&Email to the target customer volume I researched. I have developed my skills about
-    writing effective emails. During this internship, I have also learned some Linkedin Marketing techniques
-    (filtering the locations, filtering the sectors, searching with related keywords, and so on).
-    I have also learned marketing KPIs (Key Performance Indicators).
-    </p>
-</details>
-    
-    
-<details>
-    <summary>Work and Study Student at KUIS AI LAB</summary>
-    <p>Updating frontend of the KUIS AI website with WordPress. Learned WordPress technology which is used for frontend development.Working about 
-    introducing and explaining the activities, projects, and works which are being done in the KUIS AI LAB. Researched the promotional videos of 
-    the scientific laboratories (especially artificial intelligence laboratories). Working on making Q&A podcasts done with professors in Koç University. 
-    (I used the Anchor Extension of Spotify to make the podcasts).Researching about ML and NLP.</p>
-</details>
-    
-    
-<details>
- <summary>Quality Assurance Test Engineer Internship at Insumo<a href="https://www.insumo.io"> <img width='15' height='15' src="insumo.png"> </a> 
- </summary> 
- <p>
- Learning canban & scrum & agile methodologies in the process of working on an ios application. Learning the technological tool 
- called "Notion" which makes the software project management process easier. Reporting my bug findings to Insumo Engineering team. Attending 
- bug pipeline workshops and improving my knowledge about bug reporting & bug documentations. Identifying the UX Design Cons in the Insumo App. 
- Reporting these cons in the Notion account of Insumo. Attending to Swift code review sessions. Attending to the daily meetings with the Insumo 
- Engineering Team where we discuss our current progress and future plans in our tasks.Identifying and analyzing possible test case scenarios for 
- the Insumo App. Learning the tool called "Zeplin" which makes the testing process smoother and the user experience design better. Learning SwiftUI 
- Testing. Learning the usage of the XCode IDE. Working in sprints while doing the tasks. Searching, investigating, and analyzing the bugs in 
- Insumo IOS app.Testing upgraded versions of the Insumo app by using an application called "TestFlight". Learning how to use TestFlight 
- application.
-</p>
-</details>
-    
-<details>
-    <summary>Java Development Intern at OBSS<a href="https://obss.tech/tr/"> <img width='15' height='15' src="obss.jpeg"> </a> 
-    </summary>
-    <p>
-    I am trained in & researched Java , Java Core, Java J2EE, OOP, Design Patterns, Java Web Development, Apache Maven, XML, HTML, 
-    CSS, and a bit PostgreSQL. I have also implemented several little projects (including a mini-Youtube project, and my personal
-    website) by using Java J2EE, Java Servlet, Java JSP, HTML, CSS, Java, Apache Tomcat Server, and Intellij IDEA.
-    </p>
-</details>
-
-</details>
-
-<details>
-    
-    <summary>My Tech Knowledge</summary>
-    
-<details>
-    <summary>Programming Languages: Java,C,Python,PHP,Scheme,Lisp</summary>
-<label for="pLSkills">Degree:<progress id="pLSkills" value="75" max="100"></progress></label>
-</details>
-    
- <details>
- <summary>Database Languages: PostgreSQL, SQL, NoSQL</summary>
-<label for="dbSkills">Degree:<progress id="dbSkills" value="70" max="100"></progress></label>
- </details>
-    
-<details>
- <summary>Version Control Systems: Git, Github, Gitlab, Bitbucket</summary>
-<label for="versionControlSkills">Degree:
-<progress id="versionControlSkills" value="75" max="100">
-</progress>
-</label>
-</details>
-    
- <details>
-    <summary>IDEs: Eclipse, Intellij, XCode, VSCode</summary>
-<label for="ideSkills">Degree:<progress id="ideSkills" value="75" max="100"></progress></label>
-  </details>
-    
- <details>
-    <summary>Other Tech 1: HTML, CSS, Java JUnit Testing, Java J2EE, Apache Maven</summary>
-<label for="otherTech1">Degree:<progress id="otherTech1" value="60" max="100"></progress></label>
- </details>
-    
- <details>
-    <summary>Other Tech 2: OOP, Design Patterns, WordPress</summary>
-<label for="otherTech2">Degree:<progress id="otherTech2" value="80" max="100"></progress></label>
- </details>
-    
- <details>
-    <summary>Other Tech 3: Microsoft Office Stack</summary>
-<label for="otherTech3">Degree:<progress id="otherTech3" value="90" max="100"></progress></label>
-    </details> </details>
-    
-<details>
-   <summary>My Language Knowledge</summary>
-    
-<label for="englishSkills">English:
-<progress id="englishSkills" value="80" max="100"> 80% </progress>
-</label>
-    
-<label for="germanSkills">German:
-<progress id="germanSkills" value="30" max="100"> 30% </progress>
-</label>
-
-<label for="frenchSkills">French:
-<progress id="frenchSkills" value="20" max="100"> 20% 
-</progress> 
-</label>
-    
-</details>
-
-
-<div class="copyright">
-  <p>
-      &copy; Copyright 2022: All Rights Reserved By Barış Kaplan
-  </p>
-</div>
+    <center>
+        <h1>GeeksforGeeks</h1>
+        <h2>
+        Making a div horizontally
+        scrollable using CSS
+      </h2>
+        <div class="scroll">
+             It is a good platform to learn programming.
+             It is an educational website. Prepare for the
+             Recruitment drive of product based companies
+             like Microsoft, Amazon, Adobe etc with a free
+             online placement preparation course. The course
+             focuses on various MCQ's & Coding question likely
+             to be asked in the interviews & make your upcoming
+             placement season efficient and successful. Also,
+             any geeks can help other geeks by writing articles
+             on the GeeksforGeeks, publishing articles follow few
+             steps that are Articles that need little modification
+             or improvement from reviewers are published first.
+             To quickly get your articles reviewed, please refer
+             existing articles, their formatting style, coding style,
+             and try to make you are close to them. In case you are a
+             beginner, you may refer Guidelines to write an Article
+        </div>
+    </center>
 </body>
+ 
 </html>
