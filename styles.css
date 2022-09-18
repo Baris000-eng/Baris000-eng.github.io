@@ -199,6 +199,7 @@
     padding: 20px;
 }
 
+
 #experiences h2{
     font-size: 2rem;
     margin-bottom: 20px;
@@ -246,6 +247,17 @@
 #certificates h2 {
     margin-bottom: 20px;
 }
+
+#techKnowledge{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    color: WHITE;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
 
 
 
