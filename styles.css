@@ -189,6 +189,16 @@
     padding: 20px;
 }
 
+#techKnowledge{
+    display: flex;
+    flex-direction: column;
+    background-color: brown;
+    color: WHITE;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
 #certificates{
     display: flex;
     flex-direction: column;
@@ -246,16 +256,6 @@
 
 #certificates h2 {
     margin-bottom: 20px;
-}
-
-#techKnowledge{
-    display: flex;
-    flex-direction: column;
-    background-color: brown;
-    color: WHITE;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
 }
 
 
