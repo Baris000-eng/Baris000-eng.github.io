@@ -199,6 +199,14 @@
     padding: 20px;
 }
 
+#techKnowledge h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+
 #certificates{
     display: flex;
     flex-direction: column;
