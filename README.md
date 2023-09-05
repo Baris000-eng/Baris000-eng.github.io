@@ -4,18 +4,18 @@ My Personal Portfolio Website
 
 Technologies Used:
 
-Visual Studio Code
+  * Visual Studio Code
 
-HTML
+  * HTML
 
-CSS
+  * CSS
 
-Live Server
+  * Live Server
 
-Github
+  * Github
 
-Github Pages
+  * Github Pages
 
-Linux
+  * Linux
 
 
